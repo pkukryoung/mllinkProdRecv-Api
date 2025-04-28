@@ -20,6 +20,7 @@ public class ProductData {
         private Sale sale;
         private Detail detail;
         private Option option;
+        @Builder.Default
         private List<NoticeListMain> noticeList = new ArrayList<>();
         private Etc etc;
         private BranchList branchList;
@@ -142,6 +143,7 @@ public class ProductData {
     @Builder
     private static class NoticeListMain {
         private String groupNoticeNo;
+        @Builder.Default
         private List<NoticeListValue> noticeList = new ArrayList<>();
 
 

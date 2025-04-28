@@ -19,6 +19,7 @@ public class ProdAttrInf {
         private String message;
         private String total_count;
         private String total_page;
+        @Builder.Default
         private List<ResponseProdAttrInf> prodAttrList = new ArrayList<>();
     }
 
@@ -46,6 +47,7 @@ public class ProdAttrInf {
         private String message;
         private String total_count;
         private String total_page;
+        @Builder.Default
         private List<ResponseProdAttrNMInf> prodAttrNMList = new ArrayList<>();
     }
     @Data
@@ -79,6 +81,7 @@ public class ProdAttrInf {
         private String message;
         private String total_count;
         private String total_page;
+        @Builder.Default
         private List<ResponseShopAttrInfoInf> shopAttrInfoInf = new ArrayList<>();
     }
     @Data

@@ -8,14 +8,24 @@ server:
     key-alias: bns-ssl
 
 ##  root@mlink.kdjsystem.com DB
+## park 20250428 PgBouncer
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://mlink.kdjsystem.com:5433/pgtest2
-    username: admin
-    password: mac7564
+    url: jdbc:postgresql://127.0.0.1:6432/pgtest2
+    username: pooluser
+    password: 1111
     hikari:
       schema: mlinkdw
+
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://mlink.kdjsystem.com:5433/pgtest2
+#    username: admin
+#    password: mac7564
+#    hikari:
+#      schema: mlinkdw
 
 #logging
 

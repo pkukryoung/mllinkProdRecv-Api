@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Data
+@Builder
 public class CategoryInf {
 
     @Getter
@@ -18,6 +19,7 @@ public class CategoryInf {
         private String message;
         private String total_count;
         private String total_page;
+        @Builder.Default
         private List<ResponseCateMapInf> categoryMapList = new ArrayList<>();
     }
 
@@ -43,6 +45,7 @@ public class CategoryInf {
         private String message;
         private String total_count;
         private String total_page;
+        @Builder.Default
         private List<ResponseMallCategory> mallCategoryList = new ArrayList<>();
     }
     @Data

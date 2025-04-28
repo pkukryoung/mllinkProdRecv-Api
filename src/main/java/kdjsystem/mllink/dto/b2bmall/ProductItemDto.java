@@ -19,7 +19,7 @@ public class ProductItemDto {
     private String delivery_type;   //배송구분 0: 기본배송, 1: 무료, 2:착불, 3:수량별
     private String delivery_amount;   //배송비
     private String r_delivery_amount;
-    private Integer delivery_qty;   //묶음배송수량
+    private String delivery_qty;   //묶음배송수량
     private String search;   //
     private String keyword;   //검색키워드
     private Integer price;   //판매가

@@ -69,7 +69,7 @@ public class CategoryController {
     @GetMapping("searchMallCategory")
     public CategoryInf.ResponseMallCategoryList MallCategorySearch(@RequestParam String shopcd, String page) {
 
-        int startPage =  (Integer.parseInt(page) * 1000) == 0 ? 0 : (Integer.parseInt(page) * 1000) + 1;
+        int startPage =  (Integer.parseInt(page) * 1000) == 0 ? 0 : (Integer.parseInt(page) * 1000);
         List<CategoryInf.ResponseMallCategory> mallCategoryList = categoryMapper.findByMallCategory(shopcd, startPage);
         int totalpage = 0;
         int totalcount = 0;

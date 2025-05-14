@@ -9,14 +9,28 @@ server:
 
 ##  root@mlink.kdjsystem.com DB
 ## park 20250428 PgBouncer
+#spring:
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://127.0.0.1:6432/pgtest2
+#    username: pooluser
+#    password: 1111
+#    hikari:
+#      schema: mlinkdw
+
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://127.0.0.1:6432/pgtest2
+    url: jdbc:postgresql://mlink.kdjsystem.com:6432/pgtest2?prepareThreshold=0
     username: pooluser
     password: 1111
     hikari:
       schema: mlinkdw
+      maximum-pool-size: 80
+      minimum-idle: 20
+      idle-timeout: 60000
+      connection-timeout: 3000
+      max-lifetime: 1800000
 
 #spring:
 #  datasource:
